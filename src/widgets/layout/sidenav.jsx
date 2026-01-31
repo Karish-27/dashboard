@@ -27,13 +27,12 @@ export function Sidenav({ brandImg, brandName, routes }) {
       <div
         className={`relative`}
       >
-        <Link to="/" className="py-6 px-8 text-center">
-          <Typography
-            variant="h6"
-            color={sidenavType === "dark" ? "white" : "blue-gray"}
-          >
-            {brandName}
-          </Typography>
+        <Link to="/" className="py-1 px-0 text-center flex justify-center">
+          <img 
+            src="/img/logopulse.png" 
+            alt="Pulse Admin" 
+            className="h-44 w-60"
+          />
         </Link>
         <IconButton
           variant="text"
@@ -97,7 +96,7 @@ export function Sidenav({ brandImg, brandName, routes }) {
 
 Sidenav.defaultProps = {
   brandImg: "/img/logo-ct.png",
-  brandName: "Material Tailwind React",
+  brandName: "Pulse Admin",
 };
 
 Sidenav.propTypes = {
